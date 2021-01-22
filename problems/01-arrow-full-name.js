@@ -13,12 +13,16 @@ dsa
 // does this work!?
 ***********************************************************************/
 
-const arrowGetFullName = person => {
+const arrowGetFullName = person => person.firstName + " " + person.lastName
   // let fullName = person[key];
-  let keys = Object.keys(person);
-    if (keys.includes(name))
-  console.log(keys);
-}
+  // let fName = person.firstName;
+  // let lName = person.lastName;
+    
+  //   if (keys.includes(name))
+  // console.log(keys);
+
+  // return fName + " " + lName;
+
 
  let p1 = {firstName: 'John', lastName: 'Doe'};
 arrowGetFullName(p1); // => 'John Doe'
