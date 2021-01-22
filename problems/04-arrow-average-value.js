@@ -8,9 +8,25 @@ Examples:
 arrowAvgValue([10, 20]); // => 15
 arrowAvgValue([2, 3, 7]); // => 4
 arrowAvgValue([100, 60, 64]); // => 74.66666666666667
-***********************************************************************/
 
-// your code here!
+// fatt arrow syntax //
+// return average num / divisor
+// let divisor = array.length
+//  create sum counter
+// for loop
+
+***********************************************************************/
+const arrowAvgValue = (nArray) => {
+  let sum = 0;
+  let divisor = nArray.length;
+
+  for (let i = 0; i < nArray.length; i++){
+    let currentNumber = nArray[i];
+    sum += currentNumber;
+  }
+  return sum / divisor;
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

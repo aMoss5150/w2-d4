@@ -8,9 +8,21 @@ Examples:
 
 arrowMirrorArray([1,2,3]); // => [ 1, 2, 3, 3, 2, 1 ]
 arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
+
+// i: array
+// o: newArray
+// iterate backwards
+// return (...array, ...arrayReverse)
+// arrayReverse as variable to push to
+// arrow function
 ***********************************************************************/
 
-// your code here
+let arrowMirrorArray = (array) => {
+  let arrayReverse = [];
+
+  for (let i = array.length )
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
