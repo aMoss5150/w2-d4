@@ -7,7 +7,9 @@ keyword will allow any value assigned to that variable protection from being
 reassigned within that scope.
 
 Examples:
-
+//changes for check
+dsa
+//djshahffsd
 ***********************************************************************/
 
 const arrowGetFullName = person => {
