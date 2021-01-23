@@ -6,22 +6,33 @@ Write this function using an arrow function!
 
 Examples:
 
-arrowMirrorArray([1,2,3]); // => [ 1, 2, 3, 3, 2, 1 ]
-arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
+
 
 // i: array
 // o: newArray
 // iterate backwards
-// return (...array, ...arrayReverse)
+// return [...array, ...arrayReverse]
 // arrayReverse as variable to push to
 // arrow function
 ***********************************************************************/
 
 let arrowMirrorArray = (array) => {
   let arrayReverse = [];
+ 
 
-  for (let i = array.length )
+
+  for (let i = array.length -1 ; i >= 0; i--) {
+    let el = array[i];
+    arrayReverse.push(el);
+  }
+  //  let combined = [...array, ...arrayReverse];
+    // console.log(combined)
+  return [...array, ...arrayReverse]
 }
+
+
+arrowMirrorArray([1,2,3]); // => [ 1, 2, 3, 3, 2, 1 ]
+arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
